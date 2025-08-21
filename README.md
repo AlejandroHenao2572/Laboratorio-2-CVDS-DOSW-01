@@ -8,6 +8,8 @@
 **Nombre de la rama:**
 'feature/PataconDavid_LozanoJuana_GuayazanSebastian_2025-2'  
 
+**Link word:** https://pruebacorreoescuelaingeduco-my.sharepoint.com/:w:/g/personal/juana_lozano-c_mail_escuelaing_edu_co/EauHoVI1Ut1BpCEiZjbW8WgBMEYhkxokSCEpDlHznqudZQ?e=dWrqvD
+
 **Preguntas de preparación**
 1. ¿Qué ventaja ofrece el polimorfismo en el diseño de clases frente al uso de múltiples condicionales para determinar el comportamiento de un objeto?
 El polimorfismo permite definir una interfaz común y que cada clase concreta implemente su propio comportamiento. De esta manera se evita múltiples condicionales (if, switch) en el código, lo que lo hace más legible, mantenible y extensible y así evita,como código espagueti
