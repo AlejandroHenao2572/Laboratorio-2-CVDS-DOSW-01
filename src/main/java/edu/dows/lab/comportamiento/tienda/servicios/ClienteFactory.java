@@ -1,0 +1,29 @@
+package edu.dows.lab.comportamiento.tienda.servicios;
+
+import edu.dows.lab.comportamiento.tienda.modelo.Cliente;
+import edu.dows.lab.comportamiento.tienda.descuentos.DescuentoClienteNuevo;
+import edu.dows.lab.comportamiento.tienda.descuentos.DescuentoClienteFrecuente;
+
+public class ClienteFactory {
+    
+    public static Cliente crearCliente(String tipoCliente) {
+        if (tipoCliente == null || tipoCliente.trim().isEmpty()) {
+            throw new IllegalArgumentException("El tipo de cliente no puede ser nulo o vacio");
+        }
+        
+        switch (tipoCliente.toLowerCase().trim()) {
+            case "nuevo":
+                return new Cliente(new DescuentoClienteNuevo());
+            case "frecuente":
+                return new Cliente(new DescuentoClienteFrecuente());
+            default:
+                throw new IllegalArgumentException(
+                    String.format("Tipo de cliente no valido: '%s'. " +
+                                "Tipos validos: 'nuevo', 'frecuente'", tipoCliente));
+        }
+    }
+    
+    public static String[] getTiposClienteDisponibles() {
+        return new String[]{"nuevo", "frecuente"};
+    }
+}
