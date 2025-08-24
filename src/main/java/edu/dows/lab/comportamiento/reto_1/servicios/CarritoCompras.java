@@ -1,7 +1,7 @@
-package edu.dows.lab.comportamiento.tienda.servicios;
+package edu.dows.lab.comportamiento.reto_1.servicios;
 
-import edu.dows.lab.comportamiento.tienda.modelo.ItemCarrito;
-import edu.dows.lab.comportamiento.tienda.modelo.Producto;
+import edu.dows.lab.comportamiento.reto_1.modelo.ItemCarrito;
+import edu.dows.lab.comportamiento.reto_1.modelo.Producto;
 import java.util.ArrayList;
 import java.util.List;
 

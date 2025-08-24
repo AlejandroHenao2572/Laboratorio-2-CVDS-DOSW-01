@@ -1,8 +1,8 @@
-package edu.dows.lab.comportamiento.tienda.descuentos;
+package edu.dows.lab.comportamiento.reto_1.descuentos;
 
-public class DescuentoClienteFrecuente implements EstrategiaDescuento {
-    private static final double PORCENTAJE_DESCUENTO = 0.10; // 10%
-    private static final String TIPO_CLIENTE = "Frecuente";
+public class DescuentoClienteNuevo implements EstrategiaDescuento {
+    private static final double PORCENTAJE_DESCUENTO = 0.05; // 5%
+    private static final String TIPO_CLIENTE = "Nuevo";
     
     @Override
     public double aplicarDescuento(double subtotal) {

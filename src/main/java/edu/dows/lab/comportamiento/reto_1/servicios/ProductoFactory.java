@@ -1,6 +1,6 @@
-package edu.dows.lab.comportamiento.tienda.servicios;
+package edu.dows.lab.comportamiento.reto_1.servicios;
 
-import edu.dows.lab.comportamiento.tienda.modelo.Producto;
+import edu.dows.lab.comportamiento.reto_1.modelo.Producto;
 
 public class ProductoFactory {
     public static Producto crearProducto(String nombre, double precio, String categoria) {

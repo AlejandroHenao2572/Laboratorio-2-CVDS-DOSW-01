@@ -1,6 +1,6 @@
-package edu.dows.lab.comportamiento.tienda.modelo;
+package edu.dows.lab.comportamiento.reto_1.modelo;
 
-import edu.dows.lab.comportamiento.tienda.descuentos.EstrategiaDescuento;
+import edu.dows.lab.comportamiento.reto_1.descuentos.EstrategiaDescuento;
 
 public class Cliente {
     private final EstrategiaDescuento estrategiaDescuento;

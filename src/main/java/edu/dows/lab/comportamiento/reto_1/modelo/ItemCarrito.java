@@ -1,4 +1,4 @@
-package edu.dows.lab.comportamiento.tienda.modelo;
+package edu.dows.lab.comportamiento.reto_1.modelo;
 
 public class ItemCarrito {
     private final Producto producto;

@@ -1,4 +1,4 @@
-package edu.dows.lab.comportamiento.tienda.descuentos;
+package edu.dows.lab.comportamiento.reto_1.descuentos;
 
 public interface EstrategiaDescuento {
     /**

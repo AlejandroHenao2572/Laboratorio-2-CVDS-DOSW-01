@@ -1,7 +1,7 @@
-package edu.dows.lab.comportamiento.tienda.servicios;
+package edu.dows.lab.comportamiento.reto_1.servicios;
 
-import edu.dows.lab.comportamiento.tienda.modelo.Cliente;
-import edu.dows.lab.comportamiento.tienda.modelo.Producto;
+import edu.dows.lab.comportamiento.reto_1.modelo.Cliente;
+import edu.dows.lab.comportamiento.reto_1.modelo.Producto;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Set;

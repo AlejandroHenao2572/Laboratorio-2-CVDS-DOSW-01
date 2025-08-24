@@ -1,12 +1,27 @@
-package edu.dows.lab.comportamiento.tienda.main;
+package edu.dows.lab.comportamiento.reto_1.main;
 
-import edu.dows.lab.comportamiento.tienda.modelo.Producto;
-import edu.dows.lab.comportamiento.tienda.servicios.CarritoCompras;
-import edu.dows.lab.comportamiento.tienda.servicios.SistemaTienda;
+import edu.dows.lab.comportamiento.reto_1.modelo.Producto;
+import edu.dows.lab.comportamiento.reto_1.servicios.CarritoCompras;
+import edu.dows.lab.comportamiento.reto_1.servicios.SistemaTienda;
 
-public class TiendaDonPepe {
+public  class TiendaDonPepe {
     
     public static void main(String[] args) {
+        // Crear el sistema de tienda
+        SistemaTienda tienda = new SistemaTienda();
+        
+        // Mostrar bienvenida y productos disponibles
+        tienda.mostrarBienvenida();
+        tienda.mostrarProductosDisponibles();
+        
+        // Ejecutar escenario de ejemplo
+        ejecutarEscenarioEjemplo(tienda);
+        
+        System.out.println("\n" + "=".repeat(50));
+        System.out.println("Fin del programa.");
+    }
+    
+    public static void run() {
         // Crear el sistema de tienda
         SistemaTienda tienda = new SistemaTienda();
         

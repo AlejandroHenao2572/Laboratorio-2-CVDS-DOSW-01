@@ -1,6 +1,6 @@
-package edu.dows.lab.comportamiento.tienda.servicios;
+package edu.dows.lab.comportamiento.reto_1.servicios;
 
-import edu.dows.lab.comportamiento.tienda.modelo.Cliente;
+import edu.dows.lab.comportamiento.reto_1.modelo.Cliente;
 
 public class GeneradorRecibo {
     
