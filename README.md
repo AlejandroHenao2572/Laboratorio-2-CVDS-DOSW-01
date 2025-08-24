@@ -41,7 +41,7 @@ Cada clase debe tener una sola razón de cambio. Si una clase tiene varias respo
 
 *Ejemplo de violación:*
 
-```bash
+```java
 class Reporte {
     void generarReporte() { ... }
     void guardarEnArchivo() { ... }
