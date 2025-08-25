@@ -120,6 +120,10 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 
 **Cómo lo apliqué:**  
 - Implementé la fachada que coordina todos los subsistemas.  
-- Creé un método fachada que simplifica todo el proceso de venta.  
+- Creé un método fachada que simplifica todo el proceso de venta.
+- 
+
+###Ejecucion:
+<img width="416" height="655" alt="image" src="https://github.com/user-attachments/assets/d2316178-2cc9-403d-8fc3-e073866457b5" />
 ---
 
