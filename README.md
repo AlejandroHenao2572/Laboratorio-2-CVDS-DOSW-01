@@ -86,9 +86,9 @@ Es el archivo de configuración de Maven el cual contiene información del proye
 * Usa clase abstracta para definir qué es algo.
 
 ---
-## Retos
+# Retos
 
-# Reto 1  
+## Reto 1  
 
 ## Patrón de Diseño: Comportamiento  
 **Patrón Utilizado:** Strategy Pattern  
@@ -101,7 +101,6 @@ El sistema necesitaba aplicar diferentes porcentajes de descuento según el tipo
 - Contiene los métodos necesarios para el descuento según el tipo que la implemente.  
 - Implementé las estrategias concretas según el cliente (`nuevo`, `frecuente`).  
 
----
 
 ## Patrón de Diseño: Creacional  
 **Patrón Utilizado:** Factory Pattern  
@@ -112,7 +111,6 @@ Se requería crear objetos `Cliente` con diferentes estrategias de descuento seg
 **Cómo lo apliqué:**  
 - Implementé una fábrica estática para crear clientes.  
 
----
 
 ## Patrón de Diseño: Estructural  
 **Patrón Utilizado:** Facade Pattern  
@@ -123,5 +121,5 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 **Cómo lo apliqué:**  
 - Implementé la fachada que coordina todos los subsistemas.  
 - Creé un método fachada que simplifica todo el proceso de venta.  
-
+---
 
