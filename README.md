@@ -123,8 +123,10 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 - Creé un método fachada que simplifica todo el proceso de venta.
 
 ### Ejecucion:  
-<img width="416" height="655" alt="image" src="https://github.com/user-attachments/assets/d2316178-2cc9-403d-8fc3-e073866457b5" />
+<img width="416" height="655" alt="image" src="https://github.com/user-attachments/assets/d2316178-2cc9-403d-8fc3-e073866457b5" />  
+
 ---
+
 ## Reto 3: El Reino de los Vehículos  
 
 ### Patrón de Diseño: Creacional  
@@ -177,8 +179,8 @@ El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad 
 - Métodos como `iniciarCompra()`, `agregarVehiculo()`, `procesarCompraFinal()` simplifican operaciones complejas.  
 - Centraliza el flujo de la aplicación y maneja la interacción con el usuario.  
 
-###Ejecucion:
-<img width="477" height="870" alt="image" src="https://github.com/user-attachments/assets/5d2c7698-e639-49b3-907e-72cc9f3d8770" />
+### Ejecucion:
+<img width="477" height="870" alt="image" src="https://github.com/user-attachments/assets/5d2c7698-e639-49b3-907e-72cc9f3d8770" />  
 <img width="413" height="553" alt="image" src="https://github.com/user-attachments/assets/deff1e0f-f26a-4bab-8a72-84716178ed17" />
 
 
