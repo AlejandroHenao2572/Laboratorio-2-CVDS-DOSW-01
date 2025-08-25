@@ -122,7 +122,64 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 - Implementé la fachada que coordina todos los subsistemas.  
 - Creé un método fachada que simplifica todo el proceso de venta.
 
-###Ejecucion:  
+### Ejecucion:  
 <img width="416" height="655" alt="image" src="https://github.com/user-attachments/assets/d2316178-2cc9-403d-8fc3-e073866457b5" />
 ---
+## Reto 3: El Reino de los Vehículos  
+
+### Patrón de Diseño: Creacional  
+**Patrón Utilizado:** Factory Pattern  
+
+**Justificación:**  
+El sistema necesitaba crear múltiples tipos de vehículos (`Tierra`, `Acuático`, `Aéreo`) con diferentes modelos cada uno, y cada combinación de categoría-modelo tiene características específicas.  
+El **Abstract Factory** encapsula la lógica compleja de creación, centraliza la construcción de objetos y permite agregar nuevos tipos de vehículos sin modificar el código cliente.  
+
+**Cómo lo apliqué:**  
+- Creé una clase abstracta `VehiculoFactory` con el método `factory` estático.  
+- Implementé fábricas concretas para cada tipo: `VehiculoTierraFactory`, `VehiculoAcuaticoFactory`, `VehiculoAereoFactory`.  
+- Cada fábrica concreta maneja la creación específica de sus modelos con las características según la categoría.  
+
+### Patrón de Diseño: Comportamiento  
+**Patrón Utilizado:** Strategy Pattern  
+
+**Justificación:**  
+El sistema requiere flexibilidad para aplicar diferentes políticas de descuento según el método de pago (`contado`, `crédito` u otros que se agreguen).  
+Este patrón permite intercambiar algoritmos de descuento dinámicamente y facilita agregar nuevos métodos de pago sin modificar el código existente.  
+
+**Cómo lo apliqué:**  
+- Definí la interfaz `EstrategiaPago` con métodos para calcular descuentos.  
+- Implementé estrategias concretas: `PagoContado` (5% descuento) y `PagoCredito` (sin descuento).  
+- El sistema puede cambiar la estrategia de pago dinámicamente.  
+- Facilita agregar nuevos métodos como `PagoTarjeta`, `PagoBancario`, etc.  
+
+### Patrón de Diseño: Comportamiento  
+**Patrón Utilizado:** Command Pattern  
+
+**Justificación:**  
+Se necesitaba encapsular la operación de procesar una compra (mostrar resumen, calcular totales, aplicar descuentos) en un objeto independiente.  
+Esto permite ejecutar, deshacer o registrar operaciones de compra de manera flexible.  
+
+**Cómo lo apliqué:**  
+- Creé la interfaz `ComandoCompra` con el método `ejecutar()`.  
+- Implementé `ProcesarCompra` que encapsula toda la lógica de procesamiento.  
+- El comando recibe la lista de vehículos y la estrategia de pago.  
+- Utiliza **streams** para calcular el total.  
+
+### Patrón de Diseño: Estructural  
+**Patrón Utilizado:** Facade Pattern  
+
+**Justificación:**  
+El sistema involucra múltiples subsistemas (`factories`, `estrategias de pago`, `comandos`) que requieren coordinación.  
+El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad al usuario final.  
+
+**Cómo lo apliqué:**  
+- Implementé `Concesionario` que coordina todos los subsistemas.  
+- Métodos como `iniciarCompra()`, `agregarVehiculo()`, `procesarCompraFinal()` simplifican operaciones complejas.  
+- Centraliza el flujo de la aplicación y maneja la interacción con el usuario.  
+
+###Ejecucion:
+<img width="477" height="870" alt="image" src="https://github.com/user-attachments/assets/5d2c7698-e639-49b3-907e-72cc9f3d8770" />
+<img width="413" height="553" alt="image" src="https://github.com/user-attachments/assets/deff1e0f-f26a-4bab-8a72-84716178ed17" />
+
+
 
