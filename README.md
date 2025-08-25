@@ -183,5 +183,43 @@ El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad 
 <img width="477" height="870" alt="image" src="https://github.com/user-attachments/assets/5d2c7698-e639-49b3-907e-72cc9f3d8770" />  
 <img width="413" height="553" alt="image" src="https://github.com/user-attachments/assets/deff1e0f-f26a-4bab-8a72-84716178ed17" />
 
+---
+
+## Reto 6  
+
+### Patrón de Diseño: Comportamiento  
+**Patrón Utilizado:** Chain of Responsibility Pattern  
+
+**Justificación:**  
+Permite desacoplar emisores y receptores: cada técnico decide si procesa o pasa el ticket al siguiente.  
+
+**Cómo lo apliqué:**  
+- Creé una clase abstracta `Tecnico` con el método `procesarTicket()`.  
+- Cada implementación concreta decide si procesa el ticket según sus capacidades.  
+
+
+### Patrón de Diseño: Creacional  
+**Patrón Utilizado:** Factory Method Pattern  
+
+**Justificación:**  
+Centraliza la creación compleja de la cadena de responsabilidad.  
+
+**Cómo lo apliqué:**  
+- Implementé `CadenaResponsabilidadFactory` que configura automáticamente la secuencia de técnicos.  
+
+
+### Patrón de Diseño: Comportamiento  
+**Patrón Utilizado:** Command Pattern  
+
+**Justificación:**  
+Encapsula la operación de procesar todos los tickets y generar estadísticas.  
+
+**Cómo lo apliqué:**  
+- Implementé `ProcesarTicketsComando` que ejecuta todo el flujo de procesamiento.  
+
+### Ejecucion:
+<img width="437" height="600" alt="image" src="https://github.com/user-attachments/assets/50224479-5bb6-464e-9fc1-a2a75b06d503" />  
+<img width="662" height="303" alt="image" src="https://github.com/user-attachments/assets/384225e7-9c5d-4c80-bff7-c4310e25f2e9" />
+
 
 
