@@ -24,9 +24,7 @@ public class SistemaTienda {
     }
     
     public void mostrarBienvenida() {
-        System.out.println("=================================");
         System.out.println("  BIENVENIDO A LA TIENDA DON PEPE");
-        System.out.println("=================================");
     }
     
     public void mostrarProductosDisponibles() {
@@ -51,12 +49,8 @@ public class SistemaTienda {
     }
     
     public void procesarVenta(String tipoCliente, CarritoCompras carrito) {
-        try {
-            Cliente cliente = ClienteFactory.crearCliente(tipoCliente);
-            generadorRecibo.generarRecibo(cliente, carrito);
-        } catch (IllegalArgumentException e) {
-            System.err.println("Error al procesar la venta: " + e.getMessage());
-        }
+        Cliente cliente = ClienteFactory.crearCliente(tipoCliente);
+        generadorRecibo.generarRecibo(cliente, carrito);
     }
     
     public void mostrarTiposClienteDisponibles() {

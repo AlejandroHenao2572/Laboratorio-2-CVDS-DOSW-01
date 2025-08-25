@@ -1,4 +1,4 @@
-package edu.dows.lab.creacional.elchefde5estrellas;
+package edu.dows.lab.creacional.elChefDe5estrellas;
 
 import java.util.Scanner;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Collectors;
+
 
 public class RetoChefHamburguesa {
     private static final Scanner scanner = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class RetoChefHamburguesa {
             new Ingrediente("Salsa especial", 3000)
     ));
 
-    public static void main(String[] args) {
+    public static void run() {
         System.out.println("Seleccione ingredientes para su hamburguesa:");
         mostrarIngredientes();
 

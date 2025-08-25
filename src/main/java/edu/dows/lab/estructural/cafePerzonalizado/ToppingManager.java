@@ -1,4 +1,6 @@
-package main.java.edu.dows.lab.estructural.cafePerzonalizado;
+package edu.dows.lab.estructural.cafePerzonalizado;
+
+import java.util.*;
 
 public class ToppingManager {
     private Map<Integer, String> nombres = new HashMap<>();

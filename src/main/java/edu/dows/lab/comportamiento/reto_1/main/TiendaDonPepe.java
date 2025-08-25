@@ -31,14 +31,9 @@ public  class TiendaDonPepe {
         
         // Ejecutar escenario de ejemplo
         ejecutarEscenarioEjemplo(tienda);
-        
-        System.out.println("\n" + "=".repeat(50));
-        System.out.println("Fin del programa.");
     }
     
-    private static void ejecutarEscenarioEjemplo(SistemaTienda tienda) {
-        System.out.println("\n--- ESCENARIO DE EJEMPLO ---");
-        
+    private static void ejecutarEscenarioEjemplo(SistemaTienda tienda) {        
         // Crear carrito de compras
         CarritoCompras carrito = new CarritoCompras();
         
@@ -69,12 +64,8 @@ public  class TiendaDonPepe {
             int cantidad = Integer.parseInt(compra[1]);
             
             Producto producto = tienda.buscarProducto(nombreProducto);
-            if (producto != null) {
-                carrito.agregarProducto(producto, cantidad);
-            } else {
-                System.err.printf("Producto '%s' no encontrado en el inventario%n", 
-                                nombreProducto);
-            }
+            carrito.agregarProducto(producto, cantidad);
+
         }
     }
 }

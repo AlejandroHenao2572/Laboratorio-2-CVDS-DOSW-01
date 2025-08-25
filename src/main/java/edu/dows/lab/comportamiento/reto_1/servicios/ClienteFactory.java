@@ -7,10 +7,7 @@ import edu.dows.lab.comportamiento.reto_1.descuentos.DescuentoClienteFrecuente;
 public class ClienteFactory {
     
     public static Cliente crearCliente(String tipoCliente) {
-        if (tipoCliente == null || tipoCliente.trim().isEmpty()) {
-            throw new IllegalArgumentException("El tipo de cliente no puede ser nulo o vacio");
-        }
-        
+             
         switch (tipoCliente.toLowerCase().trim()) {
             case "nuevo":
                 return new Cliente(new DescuentoClienteNuevo());

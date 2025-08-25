@@ -1,4 +1,4 @@
-package main.java.edu.dows.lab.estructural.cafePerzonalizado;
+package edu.dows.lab.estructural.cafePerzonalizado;
 abstract class ToppingDecorator implements Cafe {
     protected Cafe cafe;
 

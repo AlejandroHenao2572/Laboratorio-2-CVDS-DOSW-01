@@ -1,17 +1,9 @@
-package edu.dows.lab.creacional.elchefde5estrellas;
-
-import java.util.Scanner;
-import java.util.Set;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.Collectors;
+package edu.dows.lab.creacional.elChefDe5estrellas;
 
 
 public class Ingrediente {
     private String nombre;
-    private int precio; // precio en pesos, sin formato
+    private int precio; 
 
     public Ingrediente(String nombre, int precio) {
         this.nombre = nombre;

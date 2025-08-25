@@ -1,4 +1,5 @@
-package main.java.edu.dows.lab.estructural.cafePerzonalizado;
+package edu.dows.lab.estructural.cafePerzonalizado;
+
 public class CafeBase implements Cafe {
     @Override
     public String getDescripcion() {

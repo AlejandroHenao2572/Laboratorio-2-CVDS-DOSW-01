@@ -1,15 +1,9 @@
-package edu.dows.lab.creacional.elchefde5estrellas;
+package edu.dows.lab.creacional.elChefDe5estrellas;
+
 // package declaration removed to match default package
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 
 class Hamburguesa {
     private List<Ingrediente> ingredientes;

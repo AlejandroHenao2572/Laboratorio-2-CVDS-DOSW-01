@@ -1,11 +1,5 @@
-package edu.dows.lab.creacional.elchefde5estrellas;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.Collectors;
+package edu.dows.lab.creacional.elChefDe5estrellas;
+
 
 // Patron Builder para crear hamburguesas paso a paso
 class HamburguesaBuilder {
