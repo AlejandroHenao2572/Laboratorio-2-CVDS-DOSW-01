@@ -90,7 +90,7 @@ Es el archivo de configuración de Maven el cual contiene información del proye
 
 ## Reto 1  
 
-## Patrón de Diseño: Comportamiento  
+### Patrón de Diseño: Comportamiento  
 **Patrón Utilizado:** Strategy Pattern  
 
 **Justificación:**  
@@ -102,7 +102,7 @@ El sistema necesitaba aplicar diferentes porcentajes de descuento según el tipo
 - Implementé las estrategias concretas según el cliente (`nuevo`, `frecuente`).  
 
 
-## Patrón de Diseño: Creacional  
+### Patrón de Diseño: Creacional  
 **Patrón Utilizado:** Factory Pattern  
 
 **Justificación:**  
@@ -112,7 +112,7 @@ Se requería crear objetos `Cliente` con diferentes estrategias de descuento seg
 - Implementé una fábrica estática para crear clientes.  
 
 
-## Patrón de Diseño: Estructural  
+### Patrón de Diseño: Estructural  
 **Patrón Utilizado:** Facade Pattern  
 
 **Justificación:**  
