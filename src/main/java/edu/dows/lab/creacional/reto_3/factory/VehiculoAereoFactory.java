@@ -1,6 +1,6 @@
-package edu.dows.lab.creacionales.reto_3.factory;
+package edu.dows.lab.creacional.reto_3.factory;
 
-import edu.dows.lab.creacionales.reto_3.vehiculos.*;
+import edu.dows.lab.creacional.reto_3.vehiculos.*;
 
 public class VehiculoAereoFactory extends VehiculoFactory {
     

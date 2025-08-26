@@ -1,4 +1,4 @@
-package edu.dows.lab.creacionales.reto_3.pagos;
+package edu.dows.lab.creacional.reto_3.pagos;
 
 public class PagoCredito implements TipoPago {
 

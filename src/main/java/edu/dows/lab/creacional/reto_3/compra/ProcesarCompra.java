@@ -1,7 +1,7 @@
-package edu.dows.lab.creacionales.reto_3.compra;
+package edu.dows.lab.creacional.reto_3.compra;
 
-import edu.dows.lab.creacionales.reto_3.vehiculos.*;
-import edu.dows.lab.creacionales.reto_3.pagos.*;
+import edu.dows.lab.creacional.reto_3.vehiculos.*;
+import edu.dows.lab.creacional.reto_3.pagos.*;
 import java.util.List;
 
 public class ProcesarCompra implements ComandoCompra {
