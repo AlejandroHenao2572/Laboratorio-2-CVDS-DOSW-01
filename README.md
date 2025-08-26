@@ -221,5 +221,69 @@ Encapsula la operación de procesar todos los tickets y generar estadísticas.
 <img width="437" height="600" alt="image" src="https://github.com/user-attachments/assets/50224479-5bb6-464e-9fc1-a2a75b06d503" />  
 <img width="662" height="303" alt="image" src="https://github.com/user-attachments/assets/384225e7-9c5d-4c80-bff7-c4310e25f2e9" />
 
+---
+
+# Reto 8: Zoologico UML
+
+## 1. Principios SOLID
+
+### Single Responsibility Principle  
+Cada clase tiene una única responsabilidad:
+- **Animal**: Mantiene los datos básicos y comportamientos comunes de los animales.
+- **Cuidador**: Maneja las responsabilidades de cuidado y gestión de animales.
+- **Visitante**: Se enfoca en las interacciones del visitante.
+- **Fotografia**: Maneja únicamente los datos relacionados con las fotografías.
+- **GestorNotificaciones**: Administra el sistema de notificaciones.
+
+### Open/Closed Principle  
+- Las clases **Mamifero**, **Reptil** y **Ave** extienden la clase abstracta **Animal** sin modificarla.
+- Es posible agregar nuevos tipos de animales extendiendo la clase **Animal**.
+- El uso de **atributos dinámicos** permite añadir características sin alterar la estructura base.
+
+##Liskov Substitution Principle  
+- Cualquier instancia de **Mamifero**, **Reptil** o **Ave** puede usarse donde se espere un **Animal**.
+- Los métodos abstractos aseguran que cada subclase mantenga el comportamiento esperado.
+
+### Interface Segregation Principle  
+Interfaces específicas para cada responsabilidad:
+- **InteraccionAnimal**: Interacciones básicas con animales.
+- **InteraccionHabitat**: Mantenimiento del hábitat.
+- **ObservadorEstadoSalud**: Notificaciones de cambios de estado.
+- Los clientes (**Cuidador**, **Visitante**) implementan solo las interfaces que realmente necesitan.
+
+
+### 🔴 Dependency Inversion Principle (DIP)
+- Las clases de alto nivel dependen de **abstracciones (interfaces)**, no de implementaciones concretas.
+- El sistema de notificaciones utiliza la abstracción **ObservadorEstadoSalud**.
+
+
+## 2. Patrones de Diseño Aplicados
+
+### Factory Pattern
+- **AnimalFactory** centraliza la creación de diferentes tipos de animales, facilitando el mantenimiento y la consistencia.
+
+### Observer Pattern
+- **ObservadorEstadoSalud** y **GestorNotificaciones** permiten notificar automáticamente cuando cambia el estado de salud de un animal.
+
+## 3. Diseño UML
+
+### Herencia y Polimorfismo
+- Herencia  entre **Animal** y sus subclases (**Mamifero, Reptil, Ave**).
+- Métodos abstractos garantizan polimorfismo.
+
+### Encapsulación
+- Todos los atributos son **privados**.
+- Uso de **getters y setters** públicos para acceso controlado.
+
+
+### Asociaciones
+- Asociaciones coherentes con los requirimientos y diseño del problema
+
+### Atributos Dinámicos
+- La clase **Animal** incluye `Map<String, Object> atributosDinamicos` para agregar características como:
+  - Color de pelaje
+  - Origen
+  - Rareza
+  - Historial médico  
 
 
