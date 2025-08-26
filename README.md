@@ -5,7 +5,7 @@
 - JUANA LOZANO CHAVES
 - JUAN SEBASTIÁN GUAYAZÁN CLAVIJO
 
-Arquitectura y Servicios de Red (ISIS AYSR-5L)   
+Desarrollo y Operaciones Software (ISIS DOSW-301)    
 Decanatura Ingeniería de Sistemas  
 Ingeniería de Sistemas  
 Escuela Colombiana de Ingeniería Julio Garavito  
