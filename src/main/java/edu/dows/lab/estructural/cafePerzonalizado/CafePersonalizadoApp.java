@@ -1,8 +1,6 @@
 package edu.dows.lab.estructural.cafePerzonalizado;
 
 import java.util.*;
-import java.util.stream.Collectors;
-
 public class CafePersonalizadoApp {
     public static void run() {
         InterfazUsuario interfaz = new InterfazUsuario();
