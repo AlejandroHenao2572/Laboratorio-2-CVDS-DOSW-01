@@ -264,39 +264,39 @@ Permite desacoplar emisores y receptores: cada técnico decide si procesa o pasa
 - Cada implementación concreta decide si procesa el ticket según sus capacidades.  
 
 
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Creacional  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Factory Method Pattern  
 
-### Justificación:  
+**Justificación:**  
 Centraliza la creación compleja de la cadena de responsabilidad.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Implementé `CadenaResponsabilidadFactory` que configura automáticamente la secuencia de técnicos.  
 
 
-### Patrón de Diseño:
+**Patrón de Diseño:**
 Comportamiento  
-### Patrón Utilizado:
+*Patrón Utilizado:**
 Command Pattern  
 
-### Justificación:  
+**Justificación:**  
 Encapsula la operación de procesar todos los tickets y generar estadísticas.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:** 
 - Implementé `ProcesarTicketsComando` que ejecuta todo el flujo de procesamiento.  
 
 
 ## RETO #7 – El Control Remoto Mágico
 
-### Patrón de Diseño:
+**Patrón de Diseño:**
 Comportamiento
 
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Command
 
-### Justificación:
+**Justificación:**
 Cada acción del control remoto (encender luz, abrir puerta, reproducir música, ajustar volumen, etc.) se modela como un **comando** que encapsula tanto la operación como los parámetros necesarios para ejecutarla o deshacerla.
 El patrón **Command** permite:
 
@@ -304,7 +304,7 @@ El patrón **Command** permite:
 * Registrar un historial de operaciones para luego auditar quién hizo qué.
 * Tratar cada acción como un objeto independiente, facilitando la extensión (añadir nuevos comandos sin modificar el código existente).
 
-### Cómo lo apliqué:
+**Cómo lo apliqué:**
 
 * Creé una interfaz `Command` con los métodos `execute()` y `undo()`.
 * Para cada acción (Luz, Puerta, Música, Volumen), implementé una clase concreta de comando.
