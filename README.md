@@ -89,7 +89,7 @@ Es el archivo de configuración de Maven el cual contiene información del proye
 
 # Retos
 
-## Reto 1  
+## RETO #1: El problema de la tienda de Don Pepe 
 
 **Patrón de Diseño:**
 Comportamiento  
@@ -127,7 +127,7 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 - Implementé la fachada que coordina todos los subsistemas.  
 - Creé un método fachada que simplifica todo el proceso de venta.
 
-## Reto #2: El chef de 5 estrellas
+## RETO #2: El chef de 5 estrellas
 
 **Patrón de Diseño**
 Creacional
@@ -145,7 +145,7 @@ El patrón Builder es adecuado porque permite construir paso a paso un objeto co
 - El cálculo del precio total se realiza mediante streams en el método `calcularPrecioTotal()` de la clase `Hamburguesa`.
 - Se muestra la lista completa de ingredientes junto con el precio total formateado.
 
-## Reto 3: El Reino de los Vehículos  
+## RETO #3: El Reino de los Vehículos  
 
 **Patrón de Diseño:** 
 Creacional  
@@ -205,7 +205,7 @@ El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad 
 - Métodos como `iniciarCompra()`, `agregarVehiculo()`, `procesarCompraFinal()` simplifican operaciones complejas.  
 - Centraliza el flujo de la aplicación y maneja la interacción con el usuario.  
 
-## RETO #4 – La Estafa de la Casa de Cambio
+## RETO #4: La Estafa de la Casa de Cambio 
 
 **Patrón de Diseño:**
 Creacionales
@@ -224,7 +224,7 @@ El problema requiere crear objetos de conversión dependiendo de la moneda selec
 * El programa principal solicita las transacciones al usuario, crea los conversores usando la fábrica y realiza la conversión.
 * Usé **streams** para sumar los resultados y mostrar totales por moneda.
 
-## Reto #5: El Café Personalizado
+## RETO #5: El Café Personalizado
 
 **Patrón de Diseño**
 Patrón de diseño estructural.
@@ -249,7 +249,7 @@ Para calcular el total general cuando hay varios cafés y toppings, se usan stre
 3. Si el usuario desea agregar un topping nuevo, puede seleccionar la opción correspondiente e ingresar el nombre y precio del mismo.
 4. Al final se muestra un resumen detallado de cada café con su descripción y precio, además del total general.
 
-## Reto 6  
+## RETO #6: Habla con Soporte Técnico
 
 **Patrón de Diseño:**
 Comportamiento  
@@ -288,7 +288,7 @@ Encapsula la operación de procesar todos los tickets y generar estadísticas.
 - Implementé `ProcesarTicketsComando` que ejecuta todo el flujo de procesamiento.  
 
 
-## RETO #7 – El Control Remoto Mágico
+## RETO #7: El control remoto Mágico
 
 **Patrón de Diseño:**
 Comportamiento
@@ -311,7 +311,7 @@ El patrón **Command** permite:
 * El control remoto mantiene un historial de acciones ejecutadas para permitir **deshacer** y **auditar** quién ejecutó qué acción.
 * El sistema registra el usuario que ejecuta la acción y, al final, genera un resumen de los cambios realizados y quién desconfiguró los dispositivos.
 
-## Reto 8: Zoologico UML
+## RETO #8: El Zoológico de los UML 
 
 ### 1. Principios SOLID
 
