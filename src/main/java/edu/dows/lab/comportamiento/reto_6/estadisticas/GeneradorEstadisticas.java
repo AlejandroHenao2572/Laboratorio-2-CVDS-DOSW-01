@@ -47,32 +47,5 @@ public class GeneradorEstadisticas {
         } else {
             System.out.println("No hay tickets resueltos para calcular promedio de prioridad.");
         }
-        
-        // Estadísticas adicionales
-        mostrarEstadisticasAdicionales(resultados);
-    }
-    
-    private void mostrarEstadisticasAdicionales(List<ResultadoProcesamiento> resultados) {
-        System.out.println("\n-- Estadísticas Adicionales --");
-        
-        // Distribución por nivel de dificultad
-        Map<String, Long> porNivel = resultados.stream()
-            .collect(Collectors.groupingBy(
-                r -> r.getTicket().getNivel().getDescripcion(),
-                Collectors.counting()
-            ));
-        
-        System.out.println("Distribución por nivel:");
-        porNivel.forEach((nivel, cantidad) -> 
-            System.out.println("  " + nivel + ": " + cantidad)
-        );
-        
-        // Tasa de resolución
-        long resueltos = resultados.stream()
-            .mapToInt(r -> r.fueResuelto() ? 1 : 0)
-            .sum();
-        
-        double tasaResolucion = (double) resueltos / resultados.size() * 100;
-        System.out.printf("Tasa de resolución: %.1f%%\n", tasaResolucion);
     }
 }

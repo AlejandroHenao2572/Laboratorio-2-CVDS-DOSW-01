@@ -1,4 +1,4 @@
-package edu.dows.lab.creacionales.reto_3.main;
+package edu.dows.lab.creacional.reto_3.main;
 
 public class ReinoVehiculos {
     public static void run() {

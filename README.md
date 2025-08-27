@@ -126,6 +126,24 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 <img width="416" height="655" alt="image" src="https://github.com/user-attachments/assets/d2316178-2cc9-403d-8fc3-e073866457b5" />  
 
 ---
+# Reto #2: El chef de 5 estrellas
+
+## Patrón de Diseño
+Creacional
+
+## Patrón Utilizado
+Builder (Constructor)
+
+## Justificación
+El patrón Builder es adecuado porque permite construir paso a paso un objeto complejo (en este caso, la hamburguesa con sus ingredientes personalizados) y encapsula el proceso de creación. Esto es especialmente útil cuando hay múltiples combinaciones posibles y queremos tener control sobre cómo se va construyendo el objeto final.
+
+## Cómo lo aplicamos
+- Utilizamos la clase `HamburguesaBuilder` para ir agregando ingredientes uno a uno.
+- El usuario elige los ingredientes personalizados por entrada estándar.
+- Al final, se construye la hamburguesa con todos los ingredientes seleccionados.
+- El cálculo del precio total se realiza mediante streams en el método `calcularPrecioTotal()` de la clase `Hamburguesa`.
+- Se muestra la lista completa de ingredientes junto con el precio total formateado.
+---
 
 ## Reto 3: El Reino de los Vehículos  
 
@@ -184,7 +202,52 @@ El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad 
 <img width="413" height="553" alt="image" src="https://github.com/user-attachments/assets/deff1e0f-f26a-4bab-8a72-84716178ed17" />
 
 ---
+# RETO #4 – La Estafa de la Casa de Cambio
 
+**Patrón de Diseño:**
+Creacionales
+
+**Patrón Utilizado:**
+Factory Method
+
+**Justificación:**
+El problema requiere crear objetos de conversión dependiendo de la moneda seleccionada por el usuario. Si usáramos condicionales en todo el código (`if`/`switch`), sería difícil de mantener y extender (por ejemplo, al agregar nuevas monedas). Con **Factory Method**, centralizamos la lógica de creación en una clase “fábrica” que devuelve el conversor adecuado, haciendo el sistema más flexible y extensible.
+
+**Cómo lo apliqué:**
+
+* Creé una interfaz `CurrencyConverter` con un método `convert(double amount)`.
+* Para cada moneda de destino (USD, EUR, JPY, COP), definí una clase concreta que implementa esa interfaz.
+* Implementé una clase `CurrencyConverterFactory` que decide qué conversor crear según la moneda solicitada.
+* El programa principal solicita las transacciones al usuario, crea los conversores usando la fábrica y realiza la conversión.
+* Usé **streams** para sumar los resultados y mostrar totales por moneda.
+---
+# Reto #5: El Café Personalizado
+
+## Patrón de Diseño
+Patrón de diseño estructural.
+
+## Patrón Utilizado
+Decorator (Decorador).
+
+## Justificación
+El patrón Decorator es ideal para agregar funcionalidades (toppings) a un objeto base (café) sin modificar la clase base. Esto permite combinar múltiples toppings de forma dinámica y respetando la extensibilidad del sistema.
+
+## Cómo lo aplicamos
+El café base se representa con una clase `CafeBase`. Cada topping es un decorador (`Topping`) que envuelve la instancia de `Cafe` y agrega su descripción y precio. Esto permite añadir una cantidad arbitraria de toppings a cualquier café sin cambiar su código base.
+
+Además, se utiliza un `ToppingManager` para mantener una lista dinámica de toppings disponibles, permitiendo agregar nuevos toppings en tiempo de ejecución sin modificar la base.
+
+Para calcular el total general cuando hay varios cafés y toppings, se usan streams de Java.
+
+---
+
+## Uso
+
+1. Se solicita la cantidad de cafés a personalizar.
+2. El usuario selecciona toppings para cada café mediante números.
+3. Si el usuario desea agregar un topping nuevo, puede seleccionar la opción correspondiente e ingresar el nombre y precio del mismo.
+4. Al final se muestra un resumen detallado de cada café con su descripción y precio, además del total general.
+---
 ## Reto 6  
 
 ### Patrón de Diseño: Comportamiento  
@@ -221,6 +284,29 @@ Encapsula la operación de procesar todos los tickets y generar estadísticas.
 <img width="437" height="600" alt="image" src="https://github.com/user-attachments/assets/50224479-5bb6-464e-9fc1-a2a75b06d503" />  
 <img width="662" height="303" alt="image" src="https://github.com/user-attachments/assets/384225e7-9c5d-4c80-bff7-c4310e25f2e9" />
 
+---
+# RETO #7 – El Control Remoto Mágico
+
+**Patrón de Diseño:**
+Comportamiento
+
+**Patrón Utilizado:**
+Command
+
+**Justificación:**
+Cada acción del control remoto (encender luz, abrir puerta, reproducir música, ajustar volumen, etc.) se modela como un **comando** que encapsula tanto la operación como los parámetros necesarios para ejecutarla o deshacerla.
+El patrón **Command** permite:
+
+* Ejecutar y deshacer acciones de forma flexible.
+* Registrar un historial de operaciones para luego auditar quién hizo qué.
+* Tratar cada acción como un objeto independiente, facilitando la extensión (añadir nuevos comandos sin modificar el código existente).
+
+**Cómo lo apliqué:**
+
+* Creé una interfaz `Command` con los métodos `execute()` y `undo()`.
+* Para cada acción (Luz, Puerta, Música, Volumen), implementé una clase concreta de comando.
+* El control remoto mantiene un historial de acciones ejecutadas para permitir **deshacer** y **auditar** quién ejecutó qué acción.
+* El sistema registra el usuario que ejecuta la acción y, al final, genera un resumen de los cambios realizados y quién desconfiguró los dispositivos.
 ---
 
 # Reto 8: Zoologico UML

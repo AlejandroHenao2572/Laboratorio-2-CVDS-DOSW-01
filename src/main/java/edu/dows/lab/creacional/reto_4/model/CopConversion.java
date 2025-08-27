@@ -1,4 +1,4 @@
-package model;
+package edu.dows.lab.creacional.reto_4.model;
 
 public class CopConversion implements ConversionStrategy {
     private final double rate;

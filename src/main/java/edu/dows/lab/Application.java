@@ -16,27 +16,27 @@ public class Application {
         TiendaDonPepe.run();
 
         //llamada a reto 2
-        System.err.println("RETO #2-Café Personalizado:\n");
-        CafePersonalizadoApp.run();
+        System.err.println("\nRETO #2-El Chef de 5 estrellas:\n");
+        RetoChefHamburguesa.run();
 
         //llamada a reto 3
-        System.err.println("RETO #3-Concesionario:\n");
+        System.err.println("\nRETO #3-Concesionario:\n");
         ReinoVehiculos.run();
 
         //llamada a reto 4
-        System.err.println("RETO #4-Casa de Cambio:\n");
+        System.err.println("\nRETO #4-Casa de Cambio:\n");
         CasaDeCambio.run();
 
         //llamada a reto 5
-        System.err.println("RETO #5-El Chef de 5 estrellas:\n");
-        RetoChefHamburguesa.run();
+        System.err.println("\nRETO #5-Café Personalizado:\n");
+        CafePersonalizadoApp.run();
 
         //llamada a reto 6
-        System.err.println("RETO #6-Sistema de Soporte:\n");
+        System.err.println("\nRETO #6-Sistema de Soporte:\n");
         SistemaSoporte.run();
 
         //llamada a reto 7
-        System.err.println("RETO #7-Control Remoto:\n");
+        System.err.println("\nRETO #7-Control Remoto:\n");
         ControlRemoto.run();
     }
 }
