@@ -122,25 +122,25 @@ Estructural
 ## Patrón Utilizado
 Facade Pattern  
 
-**Justificación:**  
+### Justificación:  
 El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador de recibos`, `clientes`) que requieren coordinación para realizar una venta completa.  
 
-**Cómo lo apliqué:**  
+### Cómo lo apliqué:  
 - Implementé la fachada que coordina todos los subsistemas.  
 - Creé un método fachada que simplifica todo el proceso de venta.
 
 ## Reto #2: El chef de 5 estrellas
 
-## Patrón de Diseño
+### Patrón de Diseño
 Creacional
 
-## Patrón Utilizado
+### Patrón Utilizado
 Builder (Constructor)
 
-## Justificación
+### Justificación
 El patrón Builder es adecuado porque permite construir paso a paso un objeto complejo (en este caso, la hamburguesa con sus ingredientes personalizados) y encapsula el proceso de creación. Esto es especialmente útil cuando hay múltiples combinaciones posibles y queremos tener control sobre cómo se va construyendo el objeto final.
 
-## Cómo lo aplicamos
+### Cómo lo aplicamos
 - Utilizamos la clase `HamburguesaBuilder` para ir agregando ingredientes uno a uno.
 - El usuario elige los ingredientes personalizados por entrada estándar.
 - Al final, se construye la hamburguesa con todos los ingredientes seleccionados.
