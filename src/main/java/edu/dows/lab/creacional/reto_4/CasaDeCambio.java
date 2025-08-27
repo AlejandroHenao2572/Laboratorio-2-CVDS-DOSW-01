@@ -1,11 +1,12 @@
-import model.*;
-import model.Currency;
-import service.CurrencyConverter;
+package edu.dows.lab.creacional.reto_4;
+
+import edu.dows.lab.creacional.reto_4.model.Currency;
+import edu.dows.lab.creacional.reto_4.service.CurrencyConverter;
 
 import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
+public class CasaDeCambio {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         CurrencyConverter converter = new CurrencyConverter();
 

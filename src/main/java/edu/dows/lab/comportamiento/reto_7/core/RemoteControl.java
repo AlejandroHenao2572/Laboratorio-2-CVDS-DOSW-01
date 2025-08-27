@@ -1,5 +1,7 @@
 // src/core/RemoteControl.java
-package core;
+package edu.dows.lab.comportamiento.reto_7.core;
+
+import edu.dows.lab.comportamiento.reto_7.commands.VolumeAdjustCommand;
 
 import java.util.*;
 
@@ -53,7 +55,7 @@ public class RemoteControl {
     // Métodos auxiliares para descripciones personalizadas
     private String getActionName(Command cmd) {
         if (cmd.getClass().getSimpleName().equals("VolumeAdjustCommand")) {
-            return "Ajustar volumen a " + ((commands.VolumeAdjustCommand)cmd).getVolume() + "%";
+            return "Ajustar volumen a " + ((VolumeAdjustCommand)cmd).getVolume() + "%";
         }
         if (cmd.getClass().getSimpleName().equals("LightOnCommand")) return "Encender luz";
         if (cmd.getClass().getSimpleName().equals("DoorOpenCommand")) return "Abrir puerta";
@@ -63,7 +65,7 @@ public class RemoteControl {
 
     private String getExecDescription(Command cmd, String actionName) {
         if (cmd.getClass().getSimpleName().equals("VolumeAdjustCommand")) {
-            return "Volumen ajustado a " + ((commands.VolumeAdjustCommand)cmd).getVolume() + "%";
+            return "Volumen ajustado a " + ((VolumeAdjustCommand)cmd).getVolume() + "%";
         }
         if (cmd.getClass().getSimpleName().equals("LightOnCommand")) return "Luz encendida";
         if (cmd.getClass().getSimpleName().equals("DoorOpenCommand")) return "Puerta abierta";

@@ -1,6 +1,6 @@
-package commands;
+package edu.dows.lab.comportamiento.reto_7.commands;
 
-import core.Command;
+import edu.dows.lab.comportamiento.reto_7.core.Command;
 
 public class VolumeAdjustCommand implements Command {
     private int volume;

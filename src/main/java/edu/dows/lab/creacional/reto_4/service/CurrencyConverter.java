@@ -1,6 +1,6 @@
-package service;
+package edu.dows.lab.creacional.reto_4.service;
 
-import model.ConversionStrategy;
+import edu.dows.lab.creacional.reto_4.model.ConversionStrategy;
 
 public class CurrencyConverter {
     private ConversionStrategy strategy;
