@@ -122,9 +122,6 @@ El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador
 - Implementé la fachada que coordina todos los subsistemas.  
 - Creé un método fachada que simplifica todo el proceso de venta.
 
-### Ejecucion:  
-<img width="416" height="655" alt="image" src="https://github.com/user-attachments/assets/d2316178-2cc9-403d-8fc3-e073866457b5" />  
-
 ---
 # Reto #2: El chef de 5 estrellas
 
@@ -239,15 +236,15 @@ Además, se utiliza un `ToppingManager` para mantener una lista dinámica de top
 
 Para calcular el total general cuando hay varios cafés y toppings, se usan streams de Java.
 
----
-
 ## Uso
 
 1. Se solicita la cantidad de cafés a personalizar.
 2. El usuario selecciona toppings para cada café mediante números.
 3. Si el usuario desea agregar un topping nuevo, puede seleccionar la opción correspondiente e ingresar el nombre y precio del mismo.
 4. Al final se muestra un resumen detallado de cada café con su descripción y precio, además del total general.
+   
 ---
+
 ## Reto 6  
 
 ### Patrón de Diseño: Comportamiento  
@@ -280,11 +277,8 @@ Encapsula la operación de procesar todos los tickets y generar estadísticas.
 **Cómo lo apliqué:**  
 - Implementé `ProcesarTicketsComando` que ejecuta todo el flujo de procesamiento.  
 
-### Ejecucion:
-<img width="437" height="600" alt="image" src="https://github.com/user-attachments/assets/50224479-5bb6-464e-9fc1-a2a75b06d503" />  
-<img width="662" height="303" alt="image" src="https://github.com/user-attachments/assets/384225e7-9c5d-4c80-bff7-c4310e25f2e9" />
-
 ---
+
 # RETO #7 – El Control Remoto Mágico
 
 **Patrón de Diseño:**
