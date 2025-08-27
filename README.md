@@ -91,56 +91,54 @@ Es el archivo de configuración de Maven el cual contiene información del proye
 
 ## Reto 1  
 
-### Patrón de Diseño:
+**Patrón de Diseño:**
 Comportamiento  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Strategy Pattern  
 
-### Justificación 
+**Justificación** 
 El sistema necesitaba aplicar diferentes porcentajes de descuento según el tipo de cliente.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Definí una interfaz llamada `EstrategiaDescuento`.  
 - Contiene los métodos necesarios para el descuento según el tipo que la implemente.  
 - Implementé las estrategias concretas según el cliente (`nuevo`, `frecuente`).  
 
-
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Creacional  
-### Patrón Utilizado
+**Patrón Utilizado**
 Factory Pattern  
 
-### Justificación 
+**Justificación** 
 Se requería crear objetos `Cliente` con diferentes estrategias de descuento según un parámetro de entrada (tipo de cliente).  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Implementé una fábrica estática para crear clientes.  
 
-
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Estructural  
-## Patrón Utilizado
+**Patrón Utilizado**
 Facade Pattern  
 
-### Justificación:  
+**Justificación:**  
 El sistema involucra múltiples componentes (`inventario`, `carrito`, `generador de recibos`, `clientes`) que requieren coordinación para realizar una venta completa.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Implementé la fachada que coordina todos los subsistemas.  
 - Creé un método fachada que simplifica todo el proceso de venta.
 
 ## Reto #2: El chef de 5 estrellas
 
-### Patrón de Diseño
+**Patrón de Diseño**
 Creacional
 
-### Patrón Utilizado
+**Patrón Utilizado**
 Builder (Constructor)
 
-### Justificación
+**Justificación**
 El patrón Builder es adecuado porque permite construir paso a paso un objeto complejo (en este caso, la hamburguesa con sus ingredientes personalizados) y encapsula el proceso de creación. Esto es especialmente útil cuando hay múltiples combinaciones posibles y queremos tener control sobre cómo se va construyendo el objeto final.
 
-### Cómo lo aplicamos
+**Cómo lo aplicamos**
 - Utilizamos la clase `HamburguesaBuilder` para ir agregando ingredientes uno a uno.
 - El usuario elige los ingredientes personalizados por entrada estándar.
 - Al final, se construye la hamburguesa con todos los ingredientes seleccionados.
@@ -149,76 +147,76 @@ El patrón Builder es adecuado porque permite construir paso a paso un objeto co
 
 ## Reto 3: El Reino de los Vehículos  
 
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Creacional  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Factory Pattern  
 
-### Justificación:  
+**Justificación:**  
 El sistema necesitaba crear múltiples tipos de vehículos (`Tierra`, `Acuático`, `Aéreo`) con diferentes modelos cada uno, y cada combinación de categoría-modelo tiene características específicas.  
 El **Abstract Factory** encapsula la lógica compleja de creación, centraliza la construcción de objetos y permite agregar nuevos tipos de vehículos sin modificar el código cliente.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Creé una clase abstracta `VehiculoFactory` con el método `factory` estático.  
 - Implementé fábricas concretas para cada tipo: `VehiculoTierraFactory`, `VehiculoAcuaticoFactory`, `VehiculoAereoFactory`.  
 - Cada fábrica concreta maneja la creación específica de sus modelos con las características según la categoría.  
 
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Comportamiento  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Strategy Pattern  
 
-### Justificación:  
+**Justificación:**  
 El sistema requiere flexibilidad para aplicar diferentes políticas de descuento según el método de pago (`contado`, `crédito` u otros que se agreguen).  
 Este patrón permite intercambiar algoritmos de descuento dinámicamente y facilita agregar nuevos métodos de pago sin modificar el código existente.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Definí la interfaz `EstrategiaPago` con métodos para calcular descuentos.  
 - Implementé estrategias concretas: `PagoContado` (5% descuento) y `PagoCredito` (sin descuento).  
 - El sistema puede cambiar la estrategia de pago dinámicamente.  
 - Facilita agregar nuevos métodos como `PagoTarjeta`, `PagoBancario`, etc.  
 
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Comportamiento  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Command Pattern  
 
-### Justificación:  
+**Justificación:**  
 Se necesitaba encapsular la operación de procesar una compra (mostrar resumen, calcular totales, aplicar descuentos) en un objeto independiente.  
 Esto permite ejecutar, deshacer o registrar operaciones de compra de manera flexible.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Creé la interfaz `ComandoCompra` con el método `ejecutar()`.  
 - Implementé `ProcesarCompra` que encapsula toda la lógica de procesamiento.  
 - El comando recibe la lista de vehículos y la estrategia de pago.  
 - Utiliza **streams** para calcular el total.  
 
-### Patrón de Diseño: 
+**Patrón de Diseño:** 
 Estructural  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Facade Pattern  
 
-### Justificación:  
+**Justificación:**  
 El sistema involucra múltiples subsistemas (`factories`, `estrategias de pago`, `comandos`) que requieren coordinación.  
 El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad al usuario final.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Implementé `Concesionario` que coordina todos los subsistemas.  
 - Métodos como `iniciarCompra()`, `agregarVehiculo()`, `procesarCompraFinal()` simplifican operaciones complejas.  
 - Centraliza el flujo de la aplicación y maneja la interacción con el usuario.  
 
 ## RETO #4 – La Estafa de la Casa de Cambio
 
-### Patrón de Diseño:
+**Patrón de Diseño:**
 Creacionales
 
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Factory Method
 
-### Justificación:
+**Justificación:**
 El problema requiere crear objetos de conversión dependiendo de la moneda seleccionada por el usuario. Si usáramos condicionales en todo el código (`if`/`switch`), sería difícil de mantener y extender (por ejemplo, al agregar nuevas monedas). Con **Factory Method**, centralizamos la lógica de creación en una clase “fábrica” que devuelve el conversor adecuado, haciendo el sistema más flexible y extensible.
 
-### Cómo lo apliqué:
+**Cómo lo apliqué:**
 
 * Creé una interfaz `CurrencyConverter` con un método `convert(double amount)`.
 * Para cada moneda de destino (USD, EUR, JPY, COP), definí una clase concreta que implementa esa interfaz.
@@ -228,23 +226,23 @@ El problema requiere crear objetos de conversión dependiendo de la moneda selec
 
 ## Reto #5: El Café Personalizado
 
-### Patrón de Diseño
+**Patrón de Diseño**
 Patrón de diseño estructural.
 
-### Patrón Utilizado
+**Patrón Utilizado**
 Decorator (Decorador).
 
-### Justificación
+**Justificación**
 El patrón Decorator es ideal para agregar funcionalidades (toppings) a un objeto base (café) sin modificar la clase base. Esto permite combinar múltiples toppings de forma dinámica y respetando la extensibilidad del sistema.
 
-### Cómo lo aplicamos
+**Cómo lo aplicamos**
 El café base se representa con una clase `CafeBase`. Cada topping es un decorador (`Topping`) que envuelve la instancia de `Cafe` y agrega su descripción y precio. Esto permite añadir una cantidad arbitraria de toppings a cualquier café sin cambiar su código base.
 
 Además, se utiliza un `ToppingManager` para mantener una lista dinámica de toppings disponibles, permitiendo agregar nuevos toppings en tiempo de ejecución sin modificar la base.
 
 Para calcular el total general cuando hay varios cafés y toppings, se usan streams de Java.
 
-### Uso
+**Uso**
 
 1. Se solicita la cantidad de cafés a personalizar.
 2. El usuario selecciona toppings para cada café mediante números.
@@ -253,15 +251,15 @@ Para calcular el total general cuando hay varios cafés y toppings, se usan stre
 
 ## Reto 6  
 
-### Patrón de Diseño:
+**Patrón de Diseño:**
 Comportamiento  
-### Patrón Utilizado:
+**Patrón Utilizado:**
 Chain of Responsibility Pattern  
 
-### Justificación:  
+**Justificación:**  
 Permite desacoplar emisores y receptores: cada técnico decide si procesa o pasa el ticket al siguiente.  
 
-### Cómo lo apliqué:  
+**Cómo lo apliqué:**  
 - Creé una clase abstracta `Tecnico` con el método `procesarTicket()`.  
 - Cada implementación concreta decide si procesa el ticket según sus capacidades.  
 
