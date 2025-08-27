@@ -1,6 +1,6 @@
-package app;
+package edu.dows.lab.creacional.reto_4.untitled.app;
 
-import core.*;
+import edu.dows.lab.creacional.reto_4.untilted.core.*;
 import commands.*;
 import java.util.Scanner;
 

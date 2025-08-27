@@ -1,4 +1,4 @@
-package edu.dows.lab.creacional.elChefDe5estrellas;
+package edu.dows.lab.creacional.reto_2;
 
 // package declaration removed to match default package
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package edu.dows.lab.creacional.elChefDe5estrellas;
+package edu.dows.lab.creacional.reto_2;
 
 
 public class Ingrediente {

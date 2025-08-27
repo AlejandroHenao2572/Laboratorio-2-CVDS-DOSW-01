@@ -1,4 +1,4 @@
-package edu.dows.lab.estructural.cafePerzonalizado;
+package edu.dows.lab.estructural.reto_5;
 public class Topping extends ToppingDecorator {
     private String descripcion;
     private double precio;

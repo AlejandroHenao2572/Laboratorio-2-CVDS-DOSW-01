@@ -1,4 +1,4 @@
-package core;
+package edu.dows.lab.creacional.reto_4.untitled.core;
 
 public class ActionRecord {
     public final String user;

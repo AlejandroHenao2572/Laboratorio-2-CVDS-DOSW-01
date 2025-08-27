@@ -1,4 +1,4 @@
-package edu.dows.lab.estructural.cafePerzonalizado;
+package edu.dows.lab.estructural.reto_5;
 
 import java.util.*;
 public class CafePersonalizadoApp {

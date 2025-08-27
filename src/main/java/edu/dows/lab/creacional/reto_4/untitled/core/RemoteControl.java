@@ -1,5 +1,5 @@
 // src/core/RemoteControl.java
-package core;
+package edu.dows.lab.creacional.reto_4.untitled.core;
 
 import java.util.*;
 

@@ -1,7 +1,7 @@
 package edu.dows.lab;
 import edu.dows.lab.comportamiento.reto_1.main.TiendaDonPepe;
-import edu.dows.lab.creacional.elChefDe5estrellas.RetoChefHamburguesa;
-import edu.dows.lab.estructural.cafePerzonalizado.CafePersonalizadoApp;
+import edu.dows.lab.creacional.reto_2.RetoChefHamburguesa;
+import edu.dows.lab.estructural.reto_5.CafePersonalizadoApp;
 import edu.dows.lab.creacional.reto_3.main.ReinoVehiculos;
 import edu.dows.lab.creacional.reto_4.CasaDeCambio;
 import edu.dows.lab.comportamiento.reto_6.main.SistemaSoporte;
