@@ -252,7 +252,7 @@ Interfaces específicas para cada responsabilidad:
 - Los clientes (**Cuidador**, **Visitante**) implementan solo las interfaces que realmente necesitan.
 
 
-### 🔴 Dependency Inversion Principle (DIP)
+### Dependency Inversion Principle (DIP)
 - Las clases de alto nivel dependen de **abstracciones (interfaces)**, no de implementaciones concretas.
 - El sistema de notificaciones utiliza la abstracción **ObservadorEstadoSalud**.
 
