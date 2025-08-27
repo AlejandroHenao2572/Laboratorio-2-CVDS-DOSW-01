@@ -194,10 +194,6 @@ El **Facade Pattern** proporciona una interfaz que oculta toda esta complejidad 
 - Métodos como `iniciarCompra()`, `agregarVehiculo()`, `procesarCompraFinal()` simplifican operaciones complejas.  
 - Centraliza el flujo de la aplicación y maneja la interacción con el usuario.  
 
-### Ejecucion:
-<img width="477" height="870" alt="image" src="https://github.com/user-attachments/assets/5d2c7698-e639-49b3-907e-72cc9f3d8770" />  
-<img width="413" height="553" alt="image" src="https://github.com/user-attachments/assets/deff1e0f-f26a-4bab-8a72-84716178ed17" />
-
 ---
 # RETO #4 – La Estafa de la Casa de Cambio
 
