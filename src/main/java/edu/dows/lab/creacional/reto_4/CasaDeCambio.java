@@ -53,4 +53,7 @@ public class CasaDeCambio {
             System.out.printf("%s: %.3f %s\n", c, totals.get(c), c);
         }
     }
+    public static void main(String[] args) {
+        run();
+    }
 }
