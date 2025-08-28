@@ -1,6 +1,6 @@
 package edu.dows.lab.creacional.reto_4.untitled.commands;
 
-import core.Command;
+import edu.dows.lab.creacional.reto_4.untitled.core.Command;
 
 public class VolumeAdjustCommand implements Command {
     private int volume;
